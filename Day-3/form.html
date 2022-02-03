@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Calculation</h1>
+    <form action="">
+        <input type="number" id="firstInput" >
+        <input type="number" id="secondInput" >
+       
+    </form>
+    <button onclick="myFunc()">Click Here</button>
+    <h1 id="result"></h1>
+
+<script>
+
+    function myFunc(){
+        let firstInput,secondInput,result;
+        firstInput = document.getElementById('firstInput').value;
+        secondInput = document.getElementById('secondInput').value;
+        result = firstInput - secondInput ;
+        document.getElementById('result').innerHTML = result; 
+    
+    }
+
+
+</script>
+</body>
+</html>

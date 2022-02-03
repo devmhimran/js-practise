@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+    <h1 id="demo1"></h1>
+    <h1 id="demo2"></h1>
+    <h1 id="demo3"></h1>
+    <h1 id="demo4"></h1>
+    <h1 id="demo5"></h1>
+    <h1 id="demo6"></h1>
+    <h1 id="demo7"></h1>
+
+    <script>
+       const arr = ["Cars", " Truck ", " Bus"];
+       document.getElementById('demo').innerHTML = arr;
+
+        const arr1 = new Array("Cars", "Truck", "Bus");
+        document.getElementById('demo1').innerHTML = arr1;
+
+        const arr2 = ["Banana", "Apple", "Mango"];
+        document.getElementById('demo2').innerHTML = arr2.join(" / ");
+
+        const arr3 = ["Banana", "Apple", "Mango"];
+        arr3.pop();
+        document.getElementById('demo3').innerHTML = arr3;
+
+        const arr4 = ["Banana", "Apple", "Mango"];
+        arr4.push("Black Barry");
+        document.getElementById('demo4').innerHTML = arr4.join(" , ");
+
+        const arr5 = ["Banana", "Apple", "Mango"];     
+        document.getElementById('demo5').innerHTML = arr5.push("Black Barry");
+
+        const arr6 = ["Cars", " Truck ", " Bus"];
+        arr6.shift();
+       document.getElementById('demo6').innerHTML = arr6;
+
+       const arr7 = ["Cars", " Truck ", " Bus"];
+        arr7.unshift("Van");
+       document.getElementById('demo7').innerHTML = arr7;
+
+    </script>
+</body>
+</html>
