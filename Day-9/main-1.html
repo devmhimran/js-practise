@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <section id="article-section" class="article-section">
+        <article class="article-main">
+            <h3>article-01</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, dolor!</p>
+        </article>
+        <article class="article-main">
+            <h3>article-02</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, dolor!</p>
+        </article>
+        <article class="article-main">
+            <h3>article-03</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, dolor!</p>
+        </article>
+    </section>
+    <script>
+        var articleSection = document.getElementById('article-section');
+        // var articleSection = document.getElementsByClassName('article-section');
+        var article = document.createElement('article');
+        article.classList.add('article-main');
+        var articleAdd = document.createElement('h3');
+        var paraAdd = document.createElement('p');
+        articleAdd.innerText = 'article-04';
+        paraAdd.innerText = 'This is best article for practise work';
+
+        article.appendChild(articleAdd);
+        article.appendChild(paraAdd);
+        articleSection.appendChild(article);
+
+
+        var articleDesign = document.querySelectorAll('.article-main');
+        // for( var aDesign of articleDesign ){
+        //     aDesign.style.backgroundColor  = 'red';
+        //     aDesign.style.color  = '#fff';
+        //     aDesign.style.padding  = '10px';
+        //     aDesign.style.margin  = '10px';
+        // }
+        for( let i = 0 ; i<articleDesign.length ; i++ ){
+            articleDesign[i].style.backgroundColor  = 'red';
+            articleDesign[i].style.color  = '#fff';
+            articleDesign[i].style.padding  = '10px';
+            articleDesign[i].style.margin  = '10px';
+            articleDesign[i].style.border  = '5px solid green';
+        }
+        var articleH3 = document.querySelectorAll('.article-main h3');
+        for( var artucleH of articleH3){
+            artucleH.style.color = 'blue';
+        }
+       
+        
+
+
+
+    </script>
+</body>
+</html>

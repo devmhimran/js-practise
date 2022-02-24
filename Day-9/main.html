@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <section>
+        <ul class="list" id="list">
+            <li class="list-item">Listing 01</li>
+            <li class="list-item">Listing 02</li>
+            <li class="list-item">Listing 03</li>
+            <li class="list-item">Listing 04</li>
+        </ul>
+    </section>
+
+    <script>
+        const list = document.getElementById('list');
+        const listItem = document.createElement('li');
+        listItem.classList.add('list-item');
+        listItem.innerText = 'Listing 05';
+        list.appendChild(listItem);
+
+
+
+        const listDesign = document.querySelectorAll('.list-item');
+        
+        const listItemDesign = document.getElementsByClassName('list-item');
+
+        for(const ItemDesign of listDesign){
+            ItemDesign.style.backgroundColor = 'red';
+            ItemDesign.style.padding = '20px';
+            ItemDesign.style.margin = '20px';
+            ItemDesign.style.textDecoration = 'none';
+            ItemDesign.style.color = '#fff';
+        }
+    </script>
+
+</body>
+</html>

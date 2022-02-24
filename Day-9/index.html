@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <article class="blog" id="article">
+        <h3 id="article_01" class="article-01">Article Number 01</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam beatae earum inventore obcaecati nulla accusamus laborum soluta, iusto ut odio blanditiis quas ipsa, eligendi delectus natus sapiente, voluptatum quam reprehenderit!</p>
+        <br>
+    </article>
+    <article class="blog" >
+        <h3 class="article-02">Article Number 02</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam beatae earum inventore obcaecati nulla accusamus laborum soluta, iusto ut odio blanditiis quas ipsa, eligendi delectus natus sapiente, voluptatum quam reprehenderit!</p>
+        <br>
+    </article>
+    <article class="blog" >
+        <h3 id="article_03" class="article-03">Article Number 03</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam beatae earum inventore obcaecati nulla accusamus laborum soluta, iusto ut odio blanditiis quas ipsa, eligendi delectus natus sapiente, voluptatum quam reprehenderit!</p>
+        <br>
+    </article>
+    <article class="blog" >
+        <h3 id="article_04" class="article-04">Article Number 04</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam beatae earum inventore obcaecati nulla accusamus laborum soluta, iusto ut odio blanditiis quas ipsa, eligendi delectus natus sapiente, voluptatum quam reprehenderit!</p>
+        <br>
+    </article>
+    <article class="blog" >
+        <h3 id="article_05" class="article-015" >Article Number 05</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam beatae earum inventore obcaecati nulla accusamus laborum soluta, iusto ut odio blanditiis quas ipsa, eligendi delectus natus sapiente, voluptatum quam reprehenderit!</p>
+        <br>
+    </article>
+
+
+
+    <script>
+        // const article = document.getElementsByTagName('article');
+        // const style =  article.style.backgroundColor = 'green';
+        // console.log(style);
+
+        const headingColor = document.getElementById('article_03');
+        headingColor.style.textAlign = 'center';
+        headingColor.style.backgroundColor = 'red';
+        headingColor.style.padding = '20px 10px';
+        headingColor.style.color = '#fff';
+
+
+
+        // const articleStyle = document.getElementsByTagName('article');
+        // articleStyle.style.backgroundColor = 'green';
+
+
+        const updateHeading03 = document.getElementById('article_04');
+        updateHeading03.innerText= 'Hello Upadated Heading 04';
+
+        const articles = document.getElementsByTagName('article');
+        for(const art of articles){
+            art.style.backgroundColor = 'green';
+        } 
+        const blog = document.querySelectorAll('article');
+        for( const b of blog){
+            b.style.backgroundColor = 'blue';
+            b.style.padding = '10px';
+            b.style.margin = '20px';
+            b.style.borderRadius = '20px';
+            b.style.border = '5px solid red';
+            
+        }
+        blog.style.backgroundColor = 'blue';
+    </script>
+</body>
+</html>
